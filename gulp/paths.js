@@ -1,4 +1,5 @@
 module.exports = {
+	root: './',
 	src: './src/',
 	build: './build/',
 	dist: './dist/',
