@@ -8,10 +8,9 @@ System.config({
     ]
   },
   "paths": {
-    "*": "build/*.js",
+    "*": "build/app/*.js",
     "github:*": "jspm_packages/github/*.js",
-    "npm:*": "jspm_packages/npm/*.js",
-    "aurelia-skeleton-navigation/*": "build/*.js"
+    "npm:*": "jspm_packages/npm/*.js"
   }
 });
 

@@ -1,8 +1,8 @@
-var gulp = require('gulp'),
-	NwBuilder = require('node-webkit-builder'),
-	paths = require('../paths');
+var gulp      = require('gulp'),
+		NwBuilder = require('node-webkit-builder'),
+		paths     = require('../paths');
 
-gulp.task('run', ['build-scripts', 'build-html'], function (cb) {
+gulp.task('run', ['build'], function (cb) {
 	var nw = new NwBuilder({
 		files: paths.root + '**/**',
 		platforms: ['win64'],
