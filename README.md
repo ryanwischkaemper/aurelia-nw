@@ -66,3 +66,15 @@ jspm install aurelia-router
   ```shell
   gulp test
   ```
+  
+  
+## Building for Production
+
+1. Verify the target platforms on the `nwBuilderConfig.platforms` property in **gulp\config.js**
+2. Build a release version of all specified platforms with this command:
+
+  ```shell
+  gulp build-release --release --bump minor
+  ```
+  
+  Where the value of `bump` can be *major*, *minor*, *patch*, or *prerelease* (defaults to *patch*)

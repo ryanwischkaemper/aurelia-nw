@@ -5,6 +5,6 @@ module.exports = {
 	styles: './src/content/styles/',
 	build: './build/',
 	dist: './dist/',
-	temp: './temp',
+	release: './release',
 	nwCache: './nwCache'
 };

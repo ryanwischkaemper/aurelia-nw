@@ -6,5 +6,6 @@ build
 nwCache
 temp
 dist
+release
 
 !gulp/tasks/build
