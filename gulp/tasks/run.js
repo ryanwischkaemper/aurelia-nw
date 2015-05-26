@@ -8,8 +8,8 @@ gulp.task('run', ['build'], function (cb) {
 
   nw.on('log', gutil.log);
 
-	nw.run(cb);
+	nw.run();
 
-	return nw;
+  cb()
 });
 

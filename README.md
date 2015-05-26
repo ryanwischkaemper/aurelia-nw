@@ -38,6 +38,8 @@ To run the app, follow these steps.
   ```shell
   gulp
   ```
+  
+  Changes inside the `src` folder will be watched and recompiled - use the reload button in the NW.js toolbar to refresh the app afterwards.
 
 ## Running The Unit Tests
 
