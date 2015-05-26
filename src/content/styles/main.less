@@ -1,4 +1,7 @@
+@import "vendor/genericons/genericons";
+@import "mixins";
 @import "animations";
+@import "window-bar";
 
 body {
   margin : 0;
@@ -29,7 +32,7 @@ body {
   position   : absolute;
   left       : 0;
   right      : 0;
-  top        : 50px;
+  top        : 50px + @windowbar-height;
   bottom     : 0;
   overflow-x : hidden;
   overflow-y : auto;

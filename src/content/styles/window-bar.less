@@ -1,0 +1,39 @@
+@windowbar-height: 34px;
+
+nav.navbar-fixed-top{
+  top: @windowbar-height !important;
+}
+
+.windowbar{
+  width:         100%;
+  height:         @windowbar-height;
+  background:    -webkit-linear-gradient(top, rgba(32, 32, 32, 0.81) 0, rgb(32, 32, 32) 100%);
+  border-bottom: 1px solid rgb(8, 8, 8);
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+
+  &>div{
+    .vertically-align();
+    padding-right: 5px;
+
+    &>span{
+      color: #838484;
+      font-size: 12px;
+      padding-left: 5px;
+    }
+
+    &>a{
+      color: white !important;
+      -webkit-app-region: no-drag;
+      font-size: 20px;
+
+      &:hover,
+      &:focus{
+        color: #61dafb !important;
+        cursor: pointer;
+        text-decoration: none !important;
+        -webkit-transform:  scale(1.12,1.12);
+      }
+    }
+  }
+}
