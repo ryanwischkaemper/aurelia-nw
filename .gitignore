@@ -1,11 +1,15 @@
-node_modules
-jspm_packages
-build
-.idea
-.settings
-nwCache
-temp
-dist
-release
+# Common
+.*
+!.gitignore
+*~
 
-!gulp/tasks/build
+# Packages
+/node_modules
+/jspm_packages
+
+# Build
+/build
+/nwCache
+/temp
+/dist
+/release
