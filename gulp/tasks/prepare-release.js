@@ -6,7 +6,7 @@ var gulp        = require('gulp'),
     args        = require('../args'),
     paths       = require('../paths'),
     bump        = require('gulp-bump'),
-    NwBuilder   = require('node-webkit-builder'),
+    NwBuilder   = require('nw-builder'),
     config      = require('../config'),
     gutil       = require('gulp-util');
 

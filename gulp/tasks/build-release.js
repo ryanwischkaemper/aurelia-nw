@@ -1,5 +1,5 @@
 var gulp      = require('gulp'),
-    NwBuilder = require('node-webkit-builder'),
+    NwBuilder = require('nw-builder'),
     config    = require('../config'),
     gutil     = require('gulp-util');
 
