@@ -23,7 +23,7 @@ module.exports = {
   },
   nwBuilderConfig: {
     files: isRelease ? paths.dist + '**/**' : paths.root + '**/**',
-    platforms: ['win64'], // win32,win64,osx32,osx64,linux32,linux64
+    platforms: ['linux', 'osx', 'win'],  // See https://github.com/mllrsohn/nw-builder#optionsplatforms
     buildDir: paths.release,
     cacheDir: paths.nwCache,
     buildType: 'versioned',
