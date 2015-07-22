@@ -12,6 +12,7 @@ System.config({
     "github:*": "jspm_packages/github/*.js",
     "npm:*": "jspm_packages/npm/*.js"
   },
+  "defaultJSExtensions": true,
   "buildCSS": false
 });
 
@@ -38,8 +39,8 @@ System.config({
     "aurelia-templating-binding": "github:aurelia/templating-binding@0.13.0",
     "aurelia-templating-resources": "github:aurelia/templating-resources@0.13.0",
     "aurelia-templating-router": "github:aurelia/templating-router@0.14.0",
-    "babel": "npm:babel-core@5.4.7",
-    "babel-runtime": "npm:babel-runtime@5.4.7",
+    "babel": "npm:babel-core@5.8.3",
+    "babel-runtime": "npm:babel-runtime@5.8.3",
     "bluebird": "npm:bluebird@2.9.25",
     "bootstrap": "github:twbs/bootstrap@3.3.4",
     "core-js": "npm:core-js@0.9.18",
@@ -205,6 +206,9 @@ System.config({
     },
     "npm:assert@1.3.0": {
       "util": "npm:util@0.10.3"
+    },
+    "npm:babel-runtime@5.8.3": {
+      "process": "github:jspm/nodelibs-process@0.1.1"
     },
     "npm:bluebird@2.9.25": {
       "events": "github:jspm/nodelibs-events@0.1.0",
