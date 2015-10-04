@@ -13,16 +13,9 @@ var gulp        = require('gulp'),
     runSequence = require('run-sequence'),
     assign      = Object.assign || require('object.assign');
 
-//gulp.task('build', function (done) {
-//  return runSequence(
-//    'clean',
-//    ['scripts', 'html', 'styles'],
-//    done
-//  );
-//});
-
 gulp.task('build', function (done) {
   return runSequence(
+    'clean',
     ['scripts', 'html', 'styles'],
     done
   );

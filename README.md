@@ -30,7 +30,7 @@ To run the app, follow these steps.
 5. Install the client-side dependencies with jspm:
 
   ```shell
-  jspm install -y
+  jspm install
   ```
   >**Note:** Windows users, if you experience an error of "unknown command unzip" you can solve this problem by doing `npm install -g unzip` and then re-running `jspm install`.
 6. To run the app, execute the following command:
@@ -38,7 +38,7 @@ To run the app, follow these steps.
   ```shell
   gulp
   ```
-  
+
   Changes inside the `src` folder will be watched and recompiled - use the reload button in the NW.js toolbar to refresh the app afterwards.
 
 ## Running The Unit Tests
@@ -62,14 +62,14 @@ jspm install aurelia-router
   ```shell
   karma start
   ```
-  
+
   or via gulp with this command:
-  
+
   ```shell
   gulp test
   ```
-  
-  
+
+
 ## Building for Production
 
 1. Verify the target platforms on the `nwBuilderConfig.platforms` property in **gulp\config.js**
@@ -78,5 +78,5 @@ jspm install aurelia-router
   ```shell
   gulp build-release --release --bump minor
   ```
-  
+
   Where the value of `bump` can be *major*, *minor*, *patch*, or *prerelease* (defaults to *patch*)
